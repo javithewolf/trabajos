@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clon Mejorado</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <!-- Header -->
+  <header>
+   <div class="logo">
+    <img
+     src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+     alt="Netflix Logo"
+    />
+   </div>
+   <nav>
+    <ul>
+     <li><a href="#">Inicio</a></li>
+     <li><a href="#">Series</a></li>
+     <li><a href="#">Películas</a></li>
+     <li><a href="#">Novedades</a></li>
+     <li><a href="#">Mi lista</a></li>
+    </ul>
+   </nav>
+   <div class="user">
+    <img
+     src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+     alt="User Avatar"
+    />
+   </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="hero">
+   <h1>Películas y series ilimitadas</h1>
+   <p>Disfruta donde quieras. Cancela cuando quieras.</p>
+   <button>Ver ahora</button>
+  </section>
+
+  <!-- Movie Section -->
+  <section class="movies">
+   <h2>Películas populares</h2>
+   <div class="movie-row">
+    <div
+     class="movie"
+     data-title="arcane"
+     data-description="Con las dispares ciudades de Piltover y Zaun como telón de fondo, dos hermanas luchan en bandos opuestos de una guerra entre tecnologías mágicas y creencias enfrentadas."
+     data-trailer="https://youtu.be/xPKN7MxS8TU?si=uj98VagwcTbO27DR"
+    >
+     <img
+      src="./imagenes/2231192.webp"
+      alt="pelicula 1"
+     />
+    </div>
+    <div
+     class="movie"
+     data-title="Heartstopper"
+     data-description="Los adolescentes Charlie y Nick descubren que su poco convencional amistad podría ser algo más mientras lidian con la escuela y el amor juvenil."
+     data-trailer="https://youtu.be/YtJ9uwqY1M4?si=osHbr4jqw7HUGr4j"
+    >
+     <img
+      src="./imagenes/HEARTSTOPPER1.2.jpg"
+      alt="Movie 2"
+     />
+    </div>
+    <div
+     class="movie"
+     data-title="Trollhunters: relatos de arcadia"
+     data-description="Después de encontrar un misterioso amuleto, un adolescente y sus amigos persiguen un destino poco probable y se disponen a salvar dos mundos."
+     data-trailer="https://youtu.be/LUTxm8VWPfY?si=F8qXyQ0ezyLJA8Qy"
+    >
+     <img
+      src="./imagenes/Trollhuntersposter.webp"
+      alt="Movie 3"
+     />
+    </div>
+    <div
+     class="movie"
+     data-title="Jhon Wick"
+     data-description="El legendario sicario John Wick abandona su retiro cuando, debido a un pacto de sangre que le vincula a un colega, se ve obligado a viajar a Roma para enfrentarse a los asesinos más peligrosos del mundo y aniquilar a una organización secreta.
+     "
+     data-trailer="https://youtu.be/xG8kQ-4bmD0?si=AH8cmoYGhxeeu7Qu"
+    >
+     <img
+      src="./imagenes/4d84337604635f48a46a7df9b6dc2861de642447211b6c10999ff6eb74f1401d.jpg"
+      alt="Movie 4"
+     />
+    </div>
+   </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="movieModal" class="modal">
+   <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="movieTitle"></h2>
+    <p id="movieDescription"></p>
+    <a id="movieTrailer" href="#" target="_blank">Ver tráiler</a>
+   </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+   <p>&copy; 2024 Netflix Clon Mejorado</p>
+  </footer>
+
+  <script src="app.js"></script>
+ </body>
+</html>
